@@ -29,16 +29,14 @@
 
 	<div id="page">
 			<div class="contentbg">
-				<h2>Página 4 - Formulário</h2><br>
+				<h2>Página 4 - Formulário de validação</h2><br>
 				<div class="post">
 					<div class="entry">
 
 					   <div class="divv">
 						  <form action="#.php">
-
-						  	<h3 class="title">Dados Pessoais</h3>
-						  	<h5>OBS:Campos com * são obrigatórios!</h5>
-						  	<br><br>
+						  	<fieldset>
+						  	<legend>Dados Pessoais</legend><br><br>
 
 						    <label for="nome">Nome*:</label>
 						    <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" alt="Campo obrigatório">
@@ -46,8 +44,12 @@
 						    <label for="email">Email*:</label>
 						    <input type="text" id="email" name="email" placeholder="Digite seu email aqui" alt="Campo obrigatório">
 
-						    <br><br><br><h3 class="title">Mensagem</h3><br>
-						    <label for="tipo">Testes</label>
+						    </fieldset><br><br>
+
+						    <fieldset>
+						    <legend>Mensagem</legend><br><br>
+
+						    <label for="teste">Testes</label>
 						    <select id="teste" name="teste">
 						     	<option value="t1">Teste 1</option>   
 								<option value="t2">Teste 2</option>   
@@ -56,9 +58,11 @@
 						    </select><br><br>
 
 						  <label for="textarea">Comentários</label><br><br>
-							<textarea rows="10" cols="100">
+							<textarea rows="10" cols="100" id="textarea">
 							</textarea><br><br>
 						    <input type="submit" value="Enviar">
+
+						    </fieldset>
 						  </form>
 
 						</div>

@@ -46,7 +46,9 @@ ul, ol {
 
 a {
 	text-decoration: none;
-	color: #9C9A9A;
+	color: black;
+	font-family: 'Abel', sans-serif;
+	font-weight: 400;
 }
 
 a:hover {
@@ -73,6 +75,15 @@ img.aligncenter {
 #wrapper {
 	margin: 0 auto;
 	padding: 0;
+}
+
+.local{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Abel', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: black;
 }
 
 /* Header */
