@@ -10,11 +10,21 @@
 
 	<div id="wrapper">
 		<div id="header-wrapper">
+
+			<div class="menu1-wrapper" id="menu1">
+				<ul class="menu1">
+					<li><a href="#menu" accesskey="1">Ir para o Menu (1)</a></li>
+					<li><a href="#iniciodoform" accesskey="2">Ir para o Conteúdo (2)</a></li>
+					<li><a href="#footer" accesskey="3">Ir para o Rodapé (3)</a></li>             
+				</ul>
+			</div>
+
 			<div id="header">
 				<div id="logo">
 					<h1>Página Acessível</h1>
 				</div>
 			</div>
+
 		</div>
 	</div>
 
@@ -23,13 +33,19 @@
 			<li> <a href="index.html">Página Inicial</a></li>
 			<li> <a href="pagina2.html">Página 2</a></li>
 			<li> <a href="pagina3.html">Página 3</a></li>
-			<li> <a href="pagina4.html">Página 4</a></li>
+			<li> <a href="pagina4.html" class="active">Página 4</a></li>
 		</ul>
 	</div>
 
 	<div id="page">
 			<div class="contentbg">
-				<h2>Página 4 - Formulário de validação</h2><br>
+				<p class="local">Você está em: <a href="pagina4.html" class="em">Página 4 - Formulário de validação</a></p><br>
+				<h2>Formulário</h2><br>
+
+				<div id="conteudo">         
+						<a href="#iniciodoform" id="iniciodoform" class="oculto">Início do Formulário</a>
+				</div>
+
 				<div class="post">
 					<div class="entry">
 
@@ -39,10 +55,10 @@
 						  	<legend>Dados Pessoais</legend><br><br>
 
 						    <label for="nome">Nome*:</label>
-						    <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" alt="Campo obrigatório">
+						    <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" alt="Campo obrigatório" required="">
 
 						    <label for="email">Email*:</label>
-						    <input type="text" id="email" name="email" placeholder="Digite seu email aqui" alt="Campo obrigatório">
+						    <input type="text" id="email" name="email" placeholder="Digite seu email aqui" alt="Campo obrigatório" required="">
 
 						    </fieldset><br><br>
 
@@ -68,7 +84,6 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 		

@@ -10,11 +10,21 @@
 
 	<div id="wrapper">
 		<div id="header-wrapper">
+
+			<div class="menu1-wrapper" id="menu1">
+				<ul class="menu1">
+					<li><a href="#menu" accesskey="1">Ir para o Menu (1)</a></li>
+					<li><a href="#iniciodoconteudo" accesskey="2">Ir para o Conteúdo (2)</a></li>
+					<li><a href="#footer" accesskey="3">Ir para o Rodapé (3)</a></li>            
+				</ul>
+			</div>
+
 			<div id="header">
 				<div id="logo">
 					<h1>Página Acessível</h1>
 				</div>
 			</div>
+
 		</div>
 	</div>
 
@@ -22,7 +32,7 @@
 		<ul id="menu">
 			<li> <a href="index.html">Página Inicial</a></li>
 			<li> <a href="pagina2.html">Página 2</a></li>
-			<li> <a href="pagina3.html">Página 3</a></li>
+			<li> <a href="pagina3.html" class="active">Página 3</a></li>
 			<li> <a href="pagina4.html">Página 4</a></li>
 		</ul>
 	</div>
@@ -30,7 +40,11 @@
 	<div id="page">
 		<div id="content">
 			<div class="contentbg">
-				<p class="local">Você está em: <a href="pagina3.html">Página 3</a></p><br>
+				<p class="local">Você está em: <a href="pagina3.html" class="em">Página 3</a></p><br>
+
+				<div id="conteudo">         
+						<a href="#iniciodoconteudo" id="iniciodoconteudo" accesskey="3" class="oculto">Início do conteúdo</a>
+				</div>
 				<div class="post">
 					<h3 class="title">O que são Listas?</h3>
 					<div class="entry">
@@ -38,7 +52,7 @@
 					</div>
 				</div>
 				<div class="post">
-					<h3 class="title">Lista 1</h3>
+					<h4 class="title">Lista 1</h4>
 					<div class="entry">
 					<ul>
 						<li>Item 1</li>
@@ -50,7 +64,7 @@
 					</div>
 				</div>
 				<div class="post">
-					<h3 class="title">Lista 3</h3>
+					<h4 class="title">Lista 2</h4>
 					<div class="entry">
 					<ul>
 						<li>Item 6</li>
@@ -58,20 +72,22 @@
 						<li>Item 8</li>
 						<li>Item 9</li>
 						<li>Item 10</li>
+						<li>Item 10</li>
+						<li>Item 10</li>
+						<li>Item 10</li>
+						<li>Item 10</li>
+						<li>Item 10</li>
 					</ul>
 					</div>
-					<p class="voltar"><a href="#logo">Voltar ao Topo</a></p>
 				</div>
 			</div>
 		</div>
 
 		<div id="sidebar-bg">
 			<div id="sidebar">
+				<h4>Lista de links</h4>
+				<div id="splash"><img src="img/u.jpg" width="300" height="150" alt=" Imagem ilustrativa: Praia" /></div><br>
 				<ul>
-					<li>
-						<h4>Lista de links</h4>
-						<br><p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p><br>
-					</li>
 					<li>
 						<h5>Lista link 1</h5>
 						<ul>
@@ -101,9 +117,11 @@
 							<li><a href="#">Proin gravida orci porttitor</a></li>
 						</ul>
 					</li>
-					<p class="voltar"><a href="#logo">Voltar ao Topo</a></p>
+					<a href="#finaldoconteudo" class="oculto">Final do conteúdo</a>
+					<a class="button button2" href="#menu1">Voltar ao Topo</a>
 				</ul>
 			</div>
+
 		</div>
 		<div style="clear: both;">&nbsp;</div>
 	</div>
