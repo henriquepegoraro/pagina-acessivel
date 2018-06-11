@@ -621,6 +621,15 @@ fieldset{
     font-size: 15px;	
 }
 
+legend{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Abel', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: black;
+}
+
 label{
 	margin: 0px;
 	padding: 0px;
